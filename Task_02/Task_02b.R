@@ -26,6 +26,9 @@ write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)
 Feeds <- which(beren3$event == "bottle")
 
 avgMilk <- mean(beren3$value[Feeds])
+# fluid oz
+#because it contains the numerical measurement
+#It calls back to the previously set object that we set for the event bottle
 avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)
 varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)
 totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)
@@ -47,5 +50,7 @@ plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in day
 abline(h=mean(totalFeed), lty=2, col='red')
 
 dev.off()
+
+source("http://jonsmitchell.com/code/plotFxn02b.R")
 
 
