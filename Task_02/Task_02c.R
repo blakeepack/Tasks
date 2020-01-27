@@ -71,16 +71,17 @@ abline(youngerSlope)
 abline(olderSlope)
 dev.off()
 
-#The data shows that my hypothesis does not support my ideas and I included both graphs and trndlines to show this in the most honest and informative way I could think of
+#The data does not support my ideas and I included both graphs and trendlines to show this in the most honest and informative way I could think of
 
 #Bonus predict a nap length on Monday
 Beren5 <-lm( naplength ~ age, data=beren4)
 Beren5
-zxq <- 0.002255*274
+zxq <- 0.002255*284
 zxxq<- .438686+zxq
 zxxq*60
 #So the formula is .438686+0.002255*age
-#Plugging in for Monday I get an 1.056556hour nap on Monday or 63.39336 minutes
+#Plugging in for Monday I get an 1.079106 hour nap on Monday or  64.74636 minutes
+#Finish here for assignment c and Bonus below here is just extra notes I was unsure where to put 
 
 
 

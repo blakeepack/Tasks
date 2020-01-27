@@ -1,58 +1,3 @@
-y[y>0]
-x[x >0]
--- x[!is.na(x)x>0]
-x[!is.na(x)x>0]
-x[!is.na(x) & x > 0]
-x[c(3, 5,7)]
-x(i.e. x[0])
-x (i.e. x[0])
-(i.e. x[0])
-x[0]
-x[3000]
-x[c(-2, -10)]
-x[-c(2, 10)]
-vect <- c(foo = 11, bar = 2, norf = NA)
-vect
-names(vect)
-c(11, 2, NA)
-vect2 <- c(11, 2, NA)
-names(vect2) <- c("foo", "bar", "norf")
-identical(vect, vect2)
-vect["bar"]
-vect[c("foo", "bar")]
-my_vector <- 20:1
-my_vector <- 1:20
-my_vector
-dim(my_vector)
-length(my_vector)
-dim(my_vector) <- c(4, 5)
-dim(my_vector)
-attributes(my_vector)
-my_vector
-class(my_vector)
-my_matrix <- my_vector
-?matrix()
-?matrix
-my_matrix2 <- matrix(1:20, 4rows, 5columns)
-my_matrix2 <- matrix(1:20, 4 rows, 5 columns)
-my_matrix2 <- matrix()
-my_matrix2 <- matrix( 1:20, 4, 5)
-identical(my_matrix, my_matrix2)
-patients <- vect["Bill", "Gina", "Kelly", "Sean"]
-patients <- vect["Bill, Gina, Kelly, Sean"]
-patients <- vect["Bill", "Gina", "Kelly", "Sean"]
-patients <- c["Bill", "Gina", "Kelly", "Sean"]
-patients <- c("Bill", "Gina", "Kelly", "Sean")
-cbind(patients, my_matrix)
-my_data <- data.frame(patients, my_matrix)
-my_data
-class(my_data)
-c("patient", "age", "weight", "bp", "rating", "test")
-cnames <- c("patient", "age", "weight", "bp", "rating", "test")
-colnames(cnames)
-colnames(my_data) <- cnames
-my_data
-==
 TRUE==TRUE
 False==true
 FALSE==TRUE
@@ -202,10 +147,25 @@ abline(h=mean(totalFeed), lty=2, col='red')
 source("http://jonsmitchell.com/code/plotFxn02b.R")
 dev.off()
 source("http://jonsmitchell.com/code/plotFxn02b.R")
-unique(event)
-Data <- read.csv("http://jonsmitchell.com/data/beren.csv" ,
-uinique(event)
-unique(event)
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Growth <- which(beren3$event == "trait_mass")#
+cor(Growth, beren3$age[Growth])#
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
+plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
+head(Growth)
+Growth
+?plot
+summary(Growth)
+summary(Growth)$coef[2, 1:2]
+summary(Growth)$coef[2,1:2]
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Growth <- which(beren3$event == "trait_mass")#
+cor(Growth, beren3$age[Growth])#
+summary(Growth)$coef[2,1:2]
+trait_mass
+head(trait_mass)
 Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
 length(Data)#
 nrow(Data)#
@@ -230,7 +190,45 @@ beren2 <- beren#
 beren3 <- beren2[order(beren2$age) ,]
 setwd("~/Desktop/Evolution/Tasks/Task_02")#
 beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)
-# set up directory & data#
+Growth <- which(beren3$event == "trait_mass")#
+cor(Growth, beren3$age[Growth])
+beren4 <- beren3[Naps,]
+beren4 <- beren3[Growth,]
+cor(Growth, beren3$age[Growth])
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
+plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
+beren4 <- beren3[Weight,]
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+cor(Weight, beren4$age[Growth])
+cor(Weight, beren3$age[Growth])
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)
+beren3$value[Weight]
+cor(Weight, beren3$age[Weight])
+cor(Weight, beren3$age[days])
+plot?
+?plot
+plot?
+l
+?plot
+> plot(beren3$age, beren3$Weight, pch=16, col="red", xlim=c(100,250))
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+cor(Weight, beren3$age[Weight])
+> plot(beren3$age, beren3$Weight, pch=16, col="red", xlim=c(100,250))
+plot(beren3$age, beren3$Weight)
+plot(beren3$Weight, beren3$Age)
+etwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+cor(Weight, beren3$age[Weight])#
+plot(beren3$Weight, beren3$Age)
+plot(beren3$Age, beren3$Weight)
+plot(beren3$age, beren3$Weight)
+lm(Weight ~ age, data=beren4)
 setwd("~/Desktop/Evolution/Tasks/Task_02")#
 beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
 #
@@ -241,14 +239,57 @@ beren4$end_minute <- beren4$end_minute / 60#
 beren4$start_minute <- beren4$start_minute / 60#
 beren4$napstart <- beren4$start_hour + beren4$start_minute#
 beren4$napend <- beren4$end_hour + beren4$end_minute#
-beren4$naplength <- beren4$napend - beren4$napstart
-anything <- beren4
-head(anything)
-which(beren4==179)
-which(beren4<179)
-berenYounger <- which(beren<179)
-slope(berenYounger)
-mean(berenYounger)
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#All the stuff he typed in#
+> yS <- summary(youngerSlope)$coef[2,1:2]#
+> oS <- summary(olderSlope)$coef[2,1:2]
+> boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+> yS <- summary(youngerSlope)$coef[2,1:2]
+> yS<- summary(youngerSlope)$coef[2,1:2]
+> yS<- summary(youngerSlope)$coef[2,1:2]
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+beren<- Data#
+Feeds <- which(beren[,9] =="Nap")#
+berenNap <- beren[Feeds,]#
+head(berenNap)#
+Feeds <- which(beren[,"event"] == "Nap")#
+Feeds <- which(beren$event == "Nap")#
+dayID <- apply(beren, 1, function(x) paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format= "%Y-%n-%d", origin = "2019-04-18")#
+beren$age <- dateID - dateID[which(beren$event =="birth")]#
+head(beren)#
+beren2 <- beren#
+beren3 <- beren2[order(beren2$age) ,]#
+#
+#Here is the start of Part C I hypothesize that the rate at which beren's nap times go down is going to be greater after the intro to sleeping through the night #
+#
 # set up directory & data#
 setwd("~/Desktop/Evolution/Tasks/Task_02")#
 beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
@@ -263,64 +304,113 @@ beren4$napend <- beren4$end_hour + beren4$end_minute#
 beren4$naplength <- beren4$napend - beren4$napstart#
 #
 # use which() to find the row that == the thing#
-keyDate <- which(beren4$event == "")
-# use which() to find the row that == the thing#
-keyDate <- grep("sleep", beren4$event)
-keyDate
-grep("thru", beren4$event)
-unique(beren4$event)
-keyDate <- beren3[grep("sleep", beren3$event),"age"]
-keyDate
-beren3[c(179,187),]
-beren3[grep("sleep", beren3$event),]
-# use which() to find the row that == the thing#
-keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]
-# use which() to find the row that == the thing#
-keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]
-keyDate
-beren4
-youngerDays <- which(beren4$age < "sleeping_thru")
-mean(youngerDays)
-head(youngerDays)
-head(youngerDays)
-mean(youngerDays)
-plot(as.numeric(names(youngerDays)), youngerDays, type="b", pch=16, xlab="age", ylab="naptime")youngerDays)
-youngerDays <- which(beren4$age < "keyDate")
-plot(as.numeric(names(youngerDays)), youngerDays, type="b", pch=16, xlab="age", ylab="naptime")youngerDays)
-youngerDays
-keyDate
-which(bveren4$age < keyDate)
-which(beren4$age < keyDate)
-beren4[which(beren4$age < keyDate),]
-beren4[which(beren4$age < keyDate),]
-x <- letters
-x
-x[2]
-x <- rbind(letters, sample(letters))
-x
-x[2]
-x[2,2]
-x[2,]
-x[,2]
-# use which() to find the row that == the thing#
 keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
 #
 # use which() to find which rows are < the thing#
 youngerDays <- which(beren4$age < keyDate)#
-youngerBeren <- beren4[youngerDays,]
-youngerBeren
+youngerBeren <- beren4[youngerDays,]#
+#
 # calculate the mean or slope or whatever you need for berenYounger#
-Slope <- lm(naplength~age, data=youngerBeren)$coef
-Slope
-# calculate the mean or slope or whatever you need for berenYounger#
-Slope <- lm(naplength~age, data=youngerBeren)$coef[2]
-Slope
-# calculate the mean or slope or whatever you need for berenYounger#
-youngerSlope <- lm( naplength ~ age, data=youngerBeren)$coef[2]
-olderDays <- beren3[which(beren4$age > keyDate)]
-olderDays <- which(beren4$age > keyDate)
-olderBeren <- beren4[olderDays,]
-olderBeren
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#All the stuff he typed in#
+> yS<- summary(youngerSlope)$coef[2,1:2]#
+> oS<- summary(olderSlope)$coef[2,1:2]
+yS<- summary(youngerSlope)$coef[2,1:2]
+a
+oS<- summary(olderSlope)$coef[2,1:2]
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+cor(Weight, beren3$age[Weight])#
+plot(beren3$age, beren3$Weight)#
+lm(Weight ~ age, data=beren4)
+plot(beren3$age, beren3$trait_mass)
+cor(Weight, beren4$age[Weight])
+plot(beren4$age, beren34trait_mass)
+plot(beren4$age, beren4$trait_mass)
+cor(Weight, beren4$age[trait_mass])
+cor(Weight, beren4$age[Weight])
+beren4[grep("mass", beren4e$event), "age"]
+beren4[grep("mass", beren4$event), "age"]
+keyDate <- beren3[grep("sleeping_thru", beren3$event), "age"]
+yDays <- which(beren4$age < keyDate)
+yBeren <- beren4[youngerDays,]
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+ #naming stuff#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+cor(Weight, beren4$age[Weight])#
+#
+#Use which function to the row == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event), "age"]#
+#use the which() function to find things below and above the sleeping thru date #
+yDays <- which(beren4$age < keyDate)#
+yBeren <- beren4[youngerDays,]
+ySLope <- lm (Weight ~ age, data=yBeren)
+ySLope <- lm (trait_mass ~ age, data=yBeren)
+ySLope <- lm(trait_mass ~ age, data=yBeren)
+ySLope <- lm(mass ~ age, data=yBeren)
+ySLope <- lm(Weight ~ age, data=yBeren)
+oDays <- which(beren4$age > keyDate)
+oBeren <- beren4[olderDays,]
+oSlope <- lm ( weight ~ age, data=oBeren)
+plot(beren4$age, beren4$trait_mass)
+cor(Weight, beren4$age[Weight])
+plot(yBeren$age, yBeren$mass)
+ys <- summary(ySlope)$coef[2,1;2]
+ys <- summary(ySlope)$coef[2,1:2]
+ySLope <- lm(Weight ~ age, data=yBeren)
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+ #naming stuff#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+#
+#Use which function to the row == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event), "age"]#
+#use the which() function to find things below and above the sleeping thru date and then the slope #
+yDays <- which(beren4$age < keyDate)#
+yBeren <- beren4[youngerDays,]#
+ySLope <- lm(Weight ~ age, data=yBeren)#
+#
+#other split IDK what to do for the weight in the slope something isnt right but it might not be necessary anyway#
+oDays <- which(beren4$age > keyDate)#
+oBeren <- beren4[olderDays,]#
+oSlope <- lm ( weight ~ age, data=oBeren)#
+#
+ys <- summary(ySlope)$coef[2,1:2]#
+os <- summary(oSlope)$coef[2, 1:2]
+oSlope <- lm ( trait_mass ~ age, data=oBeren)
+oSlope <- lm ( mass ~ age, data=oBeren)
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+head(beren4)#
+#
+#naming stuff#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+naptime <- tapply(beren4$naplength, beren4$age, sum, na.rm=T)#
+#
+#graphing #
+par(las=1, mar=c(5,5,1,1), mgp=c(2, 0.5 ,0), tck=-.01) #
+plot(as.numeric(names(naptime)), naptime, type="b", pch=16, xlab="day", ylab="naptime")#
+cor.test(beren4$age, naplength)
+cor.test(beren4$age, beren4$naplength)
 setwd("~/Desktop/Evolution/Tasks/Task_02")#
 beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
 #
@@ -331,27 +421,15 @@ beren4$end_minute <- beren4$end_minute / 60#
 beren4$start_minute <- beren4$start_minute / 60#
 beren4$napstart <- beren4$start_hour + beren4$start_minute#
 beren4$napend <- beren4$end_hour + beren4$end_minute#
-beren4$naplength <- beren4$napend - beren4$napstart
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
 keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
 #
 # use which() to find which rows are < the thing#
 youngerDays <- which(beren4$age < keyDate)#
 youngerBeren <- beren4[youngerDays,]#
 #
-# calculate the mean or slope or whatever you need for berenYounger#
-youngerSlope <- lm( naplength ~ age, data=youngerBeren)$coef[2]
-olderDays <- which(beren4$age > keyDate)#
-olderBeren <- beren4[olderDays,]
-olderBeren
-olderSlope <- m( naplength ~ age, data=olderBeren)$coef[2]
-olderSlope <- lm( naplength ~ age, data=olderBeren)$coef[2]
-head(olderBeren)
-par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)
-# first option: two scatterplots#
-par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)
 # calculate the mean or slope or whatever you need for berenYounger#
 youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
 #
@@ -361,94 +439,352 @@ youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
 olderDays <- which(beren4$age > keyDate)#
 olderBeren <- beren4[olderDays,]#
 #Calculate the mean or slope of the rate #
-olderSlope <- lm( naplength ~ age, data=olderBeren)$coef[2]#
-#
-#Co#
-#
-# first option: two scatterplots#
+olderSlope <- lm( naplength ~ age, data=olderBeren)
+yS<- summary(youngerSlope)$coef[2,1:2]#
+ oS<- summary(olderSlope)$coef[2,1:2]#
+ boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
 par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
+ plot(youngerBeren$age, youngerBeren$naplength)
 abline(youngerSlope)
-# first option: two scatterplots#
-par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
+plot(olderBeren$age, olderBeren$naplength)
 abline(olderSlope)
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)
+yS<- summary(youngerSlope)$coef[2,1:2]#
+ oS<- summary(olderSlope)$coef[2,1:2]
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+par(mfrow=c(1,2))
+plot(youngerBeren$age, youngerBeren$naplength)
+abline(youngerSlope)
+plot(olderBeren$age, olderBeren$naplength)
+abline(olderSlope)
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+keyDate <- beren4[grep("sleeping_thru", beren3$event), "age"]
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+ #naming stuff#
+Weight <- which(beren3$event == "trait_mass")#
+beren4 <- beren3[Weight,]#
+#
+#Use which function to the row == the thing#
+keyDate <- beren4[grep("sleeping_thru", beren3$event), "age"]#
+#use the which() function to find things below and above the sleeping thru date and then the slope #
+yDays <- which(beren4$age < keyDate)#
+yBeren <- beren4[youngerDays,]#
+ySLope <- lm(Weight ~ age, data=yBeren)#
+#
+#other split IDK what to do for the weight in the slope something isnt right but it might not be necessary anyway#
+oDays <- which(beren4$age > keyDate)#
+oBeren <- beren4[olderDays,]#
+oSlope <- lm (  ~ age, data=oBeren)#
+#
+ys <- summary(ySlope)$coef[2,1:2]#
+os <- summary(oSlope)$coef[2, 1:2]
+beren4
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+beren<- Data#
+Feeds <- which(beren[,9] =="Nap")#
+berenNap <- beren[Feeds,]#
+head(berenNap)#
+Feeds <- which(beren[,"event"] == "Nap")#
+Feeds <- which(beren$event == "Nap")#
+dayID <- apply(beren, 1, function(x) paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format= "%Y-%n-%d", origin = "2019-04-18")#
+beren$age <- dateID - dateID[which(beren$event =="birth")]#
+head(beren)#
+beren2 <- beren#
+beren3 <- beren2[order(beren2$age) ,]#
+#
+#Here is the start of Part C I hypothesize that the rate at which beren's nap times go down is going to be greater after the intro to sleeping through the night #
+#
+# set up directory & data#
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#All the stuff he typed in#
+yS<- summary(youngerSlope)$coef[2,1:2]#
+oS<- summary(olderSlope)$coef[2,1:2]
+par(mfrow=c(1,2))
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+abline(youngerSlope)
+abline(olderSlope)
+par(mfrow=c(1,2,3))
+plot(youngerBeren$age, youngerBeren$naplength)
+abline(youngerSlope)
+plot(olderBeren$age, olderBeren$naplength)
+abline(youngerSlope)
+abline(olderSlope)
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+par(mfrow=c(1,2))
+abline(youngerSlope, col="red")
+abline(youngerSlope col="red")
+par(mfrow=c(1,2))
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+dev.off()
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#SLope Naming #
+yS<- summary(youngerSlope)$coef[2,1:2]#
+oS<- summary(olderSlope)$coef[2,1:2]#
+#
+#Plotting#
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+dev.off()
+etwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#SLope Naming #
+yS<- summary(youngerSlope)$coef[2,1:2]#
+oS<- summary(olderSlope)$coef[2,1:2]#
+#
+#Plotting#
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#SLope Naming #
+yS<- summary(youngerSlope)$coef[2,1:2]#
+oS<- summary(olderSlope)$coef[2,1:2]#
+#
+#Plotting#
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+dev.off()
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+dev.off()
+olderSlope <- lm( naplength ~ age, data=olderBeren)
+olderSLope
+olderSlope
+Beren5 <-lm( naplength ~ age, data=beren4)
+Beren5
+youngerslope
+youngerSlope
+olderSlope
+par(mfrow=c(1,2))#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
+abline(youngerSlope)#
+abline(olderSlope)
+abline(Beren5)
+Beren5
+zxq <- 0.002255*274
+.438686+zxq
+zxxq<- .438686+zxq
+zxxq*60
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
 #Use which() to find the rows are > the thing#
 olderDays <- which(beren4$age > keyDate)#
 olderBeren <- beren4[olderDays,]#
 #Calculate the mean or slope of the rate #
 olderSlope <- lm( naplength ~ age, data=olderBeren)#
 #
-#Co#
+youngerSlope#
+olderSlope#
+#SLope Naming #
+yS<- summary(youngerSlope)$coef[2,1:2]#
+oS<- summary(olderSlope)$coef[2,1:2]#
 #
-# first option: two scatterplots#
+#Plotting#
 par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
-abline(olderSlope)
-# first option: two scatterplots#
-par(mfrow=c(2,1))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
-abline(olderSlope)
-# first option: two scatterplots#
-par(mfrow=c(2,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
-abline(olderSlope)
-# first option: two scatterplots#
-par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
-abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
-abline(olderSlope)
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(0,250))
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(10,250))
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))#
 plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
-points(olderBeren$age, olderBeren$naplengthm pch=16, col="blue")
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
-points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
-youngerSlope
-youngerSlope$coef
-summary(youngerSlope)
-summary(youngerSlope)$coef
-yS <- summary(youngerSlope)$coef[2,1:2]#
-oS <- summary(olderSlope)$coef[2,1:2]#
-#
-boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
-# first option: two scatterplots#
-par(mfrow=c(1,2))#
-plot(youngerBeren$age, youngerBeren$naplength)#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")#
 abline(youngerSlope)#
-plot(olderBeren$age, olderBeren$naplength)#
 abline(olderSlope)
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
-points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
-par(mfrow=c(1,1))#
-plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
-points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
-yS <- summary(youngerSlope)$coef[2,1:2]#
-oS <- summary(olderSlope)$coef[2,1:2]#
-#
-boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
-yS <- summary(youngerSlope)$coef[2,1:2]#
-oS <- summary(olderSlope)$coef[2,1:2]#
-boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
-setwd("~/Desktop/Evolution/Tasks/Task_02")#
-beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
-Growth <- which(beren3$event == "trait_mass")#
-cor(Growth, beren3$age[Growth])#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
-plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
-setwd("~/Desktop/Evolution/Tasks/Task_02")#
-beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
-Growth <- which(beren3$event == "trait_mass")#
-cor(Growth, beren3$age[Growth])#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
-plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
