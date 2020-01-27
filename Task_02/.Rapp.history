@@ -1,31 +1,3 @@
-seq(along.with = my_seq)
-seq_along(my_seq)
-rep(0, times=40)
-rep(c(0,1,2), times+10)
-rep(c(0,1,2), times=10)
-Try rep(c(0, 1, 2), each =10)
-rep(c(0, 1, 2), each =10)
-x<-c(44,NA, 5, NA)
-x*3
-y<- rnorm(1000)
-z<- rnorm(1000)
-z <- rep(NA, 1000)
-my_data <- sample(c(y, z))
-my_data <- sample(c(y, z), 100)
-is.na(my_data)
-my_na <- is.na(my_data)
-my_na
-my_data == Na
-my_data == NA
-sum(my_na)
-my_data
-0/0
-Inf-Inf
-x
-x[1:10]
-x[is.na(x)]
-y<- x[!is.na(x)]
-y
 y[y>0]
 x[x >0]
 -- x[!is.na(x)x>0]
@@ -178,101 +150,36 @@ data(mtcars)
 ?boxplot
 boxplot(formula = mpg~ cyl, data =mtcars)
 hist(mtcars$mpg)
-setwd("~/Desktop/Evolution/Programming/Task_02")
-Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)
-length(Data)
-nrow(Data)
-ncol(Data)
-colnames(Data)
-head(Data)
-Data[1,]
-Data[2,]
-Data[1:3,]
-Data[1:5, 1:3]
-Feeds <- which(Data[,9] == "bottle")
-berenMilk <- Data[Feeds,]
-head(berenMilk)
-Feeds <- which(Data[, "event"] == "bottle")
-Feeds <- which(Data$event == "bottle")
-dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))
-dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
-Data$age <- dateID - dateID[which(Data$event =="birth")]
-head(Data)
-beren2 <- Data
-beren3 <- beren2[order(beren2$age),]
-write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)
-avgMilk <- mean(beren3$value[Feeds])
-avgFeed <- (beren3$value[Feeds], beren3$age[Feeds], mean)
-avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean)
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feed], var)
-varFeed <- tapply(beren3$value[Feed], beren3$age[Feed], var)
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var)
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum)
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)
-cor(beren3$value[Feeds], beren3$age[Feeds])
-cor.test(beren3$value[Feeds], beren3$age[Feeds])
-berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])
-summary(berenCor)
-berenANOVA <- aov(beren3$value[Feeds], ~ beren3$caregiver[Feeds])
-berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])
-boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
-abline(h= avgFeed, lty=2, col='red')
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
-abline(h=avgFeed, lty=2, col='red')
-dev.off()
-pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=avgFeed, lty=2, col='red')#
-dev.off()
-getwd()
-pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=avgFeed, lty=2, col='red')#
-dev.off()
-avgFeed
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
-avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length, na.rm=T)
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-#abline(h=avgFeed, lty=2, col='red')
-range(Feeds)
-avgFeed
-range(beren3$value[Feeds])
-range(beren3$value[Feeds], na.rm=T)
-x <- Data[Feeds,]
-head(x)
-x$value
-beren3$value[Feeds]
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]#
+write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)#
+#
 Feeds <- which(beren3$event == "bottle")#
 #
 avgMilk <- mean(beren3$value[Feeds])#
-avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)#
-cor(beren3$value[Feeds], beren3$age[Feeds])#
-cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-summary(berenCor)#
-berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])#
-boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h= avgFeed, lty=2, col='red')
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-#abline(h=avgFeed, lty=2, col='red')
-avgMilk <- mean(beren3$value[Feeds])#
+# fluid oz#
+#because it contains the numerical measurement#
+#It calls back to the previously set object that we set for the event bottle#
 avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
 varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
 totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
@@ -286,62 +193,262 @@ boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bott
 par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
 plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
 abline(h= avgFeed, lty=2, col='red')#
-pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-#abline(h=avgFeed, lty=2, col='red')#
-dev.off()
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=avgMilk, lty=2, col='red')
-Feeds <- which(beren3$event == "bottle")#
 #
-avgMilk <- mean(beren3$value[Feeds])#
-avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)#
-cor(beren3$value[Feeds], beren3$age[Feeds])#
-cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-summary(berenCor)#
-berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])#
-boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h= avgFeed, lty=2, col='red')#
-pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=mean(totalFeed), lty=2, col='red')#
-dev.off()
-Feeds <- which(beren3$event == "bottle")#
-#
-avgMilk <- mean(beren3$value[Feeds])#
-avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
-varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
-totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
-numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)#
-cor(beren3$value[Feeds], beren3$age[Feeds])#
-cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])#
-summary(berenCor)#
-berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])#
-boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h= avgFeed, lty=2, col='red')#
-pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=mean(totalFeed), lty=2, col='red')#
-dev.off()
 pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
 #
-par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
-plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
-abline(h=mean(totalFeed), lty=2, col='red')#
-#
-dev.off()
 par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
 plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
 abline(h=mean(totalFeed), lty=2, col='red')
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+dev.off()
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+unique(event)
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" ,
+uinique(event)
+unique(event)
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+beren<- Data#
+Feeds <- which(beren[,9] =="Nap")#
+berenNap <- beren[Feeds,]#
+head(berenNap)#
+Feeds <- which(beren[,"event"] == "Nap")#
+Feeds <- which(beren$event == "Nap")#
+dayID <- apply(beren, 1, function(x) paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format= "%Y-%n-%d", origin = "2019-04-18")#
+beren$age <- dateID - dateID[which(beren$event =="birth")]#
+head(beren)#
+beren2 <- beren#
+beren3 <- beren2[order(beren2$age) ,]
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)
+# set up directory & data#
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart
+anything <- beren4
+head(anything)
+which(beren4==179)
+which(beren4<179)
+berenYounger <- which(beren<179)
+slope(berenYounger)
+mean(berenYounger)
+# set up directory & data#
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart#
+#
+# use which() to find the row that == the thing#
+keyDate <- which(beren4$event == "")
+# use which() to find the row that == the thing#
+keyDate <- grep("sleep", beren4$event)
+keyDate
+grep("thru", beren4$event)
+unique(beren4$event)
+keyDate <- beren3[grep("sleep", beren3$event),"age"]
+keyDate
+beren3[c(179,187),]
+beren3[grep("sleep", beren3$event),]
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]
+keyDate
+beren4
+youngerDays <- which(beren4$age < "sleeping_thru")
+mean(youngerDays)
+head(youngerDays)
+head(youngerDays)
+mean(youngerDays)
+plot(as.numeric(names(youngerDays)), youngerDays, type="b", pch=16, xlab="age", ylab="naptime")youngerDays)
+youngerDays <- which(beren4$age < "keyDate")
+plot(as.numeric(names(youngerDays)), youngerDays, type="b", pch=16, xlab="age", ylab="naptime")youngerDays)
+youngerDays
+keyDate
+which(bveren4$age < keyDate)
+which(beren4$age < keyDate)
+beren4[which(beren4$age < keyDate),]
+beren4[which(beren4$age < keyDate),]
+x <- letters
+x
+x[2]
+x <- rbind(letters, sample(letters))
+x
+x[2]
+x[2,2]
+x[2,]
+x[,2]
+# use which() to find the row that == the thing#
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]
+youngerBeren
+# calculate the mean or slope or whatever you need for berenYounger#
+Slope <- lm(naplength~age, data=youngerBeren)$coef
+Slope
+# calculate the mean or slope or whatever you need for berenYounger#
+Slope <- lm(naplength~age, data=youngerBeren)$coef[2]
+Slope
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)$coef[2]
+olderDays <- beren3[which(beren4$age > keyDate)]
+olderDays <- which(beren4$age > keyDate)
+olderBeren <- beren4[olderDays,]
+olderBeren
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+#
+# make a nap duration column#
+Naps <- which(beren3$event == "nap")#
+beren4 <- beren3[Naps,]#
+beren4$end_minute <- beren4$end_minute / 60#
+beren4$start_minute <- beren4$start_minute / 60#
+beren4$napstart <- beren4$start_hour + beren4$start_minute#
+beren4$napend <- beren4$end_hour + beren4$end_minute#
+beren4$naplength <- beren4$napend - beren4$napstart
+keyDate <- beren3[grep("sleeping_thru", beren3$event),"age"]#
+#
+# use which() to find which rows are < the thing#
+youngerDays <- which(beren4$age < keyDate)#
+youngerBeren <- beren4[youngerDays,]#
+#
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)$coef[2]
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]
+olderBeren
+olderSlope <- m( naplength ~ age, data=olderBeren)$coef[2]
+olderSlope <- lm( naplength ~ age, data=olderBeren)$coef[2]
+head(olderBeren)
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)
+# calculate the mean or slope or whatever you need for berenYounger#
+youngerSlope <- lm( naplength ~ age, data=youngerBeren)#
+#
+# repeat above steps for which rows are > the thing#
+#
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)$coef[2]#
+#
+#Co#
+#
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+#Use which() to find the rows are > the thing#
+olderDays <- which(beren4$age > keyDate)#
+olderBeren <- beren4[olderDays,]#
+#Calculate the mean or slope of the rate #
+olderSlope <- lm( naplength ~ age, data=olderBeren)#
+#
+#Co#
+#
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+# first option: two scatterplots#
+par(mfrow=c(2,1))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+# first option: two scatterplots#
+par(mfrow=c(2,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(0,250))
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(10,250))
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplengthm pch=16, col="blue")
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+youngerSlope
+youngerSlope$coef
+summary(youngerSlope)
+summary(youngerSlope)$coef
+yS <- summary(youngerSlope)$coef[2,1:2]#
+oS <- summary(olderSlope)$coef[2,1:2]#
+#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+# first option: two scatterplots#
+par(mfrow=c(1,2))#
+plot(youngerBeren$age, youngerBeren$naplength)#
+abline(youngerSlope)#
+plot(olderBeren$age, olderBeren$naplength)#
+abline(olderSlope)
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+par(mfrow=c(1,1))#
+plot(youngerBeren$age, youngerBeren$naplength, pch=16, col="red", xlim=c(100,250))#
+points(olderBeren$age, olderBeren$naplength, pch=16, col="blue")
+yS <- summary(youngerSlope)$coef[2,1:2]#
+oS <- summary(olderSlope)$coef[2,1:2]#
+#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+yS <- summary(youngerSlope)$coef[2,1:2]#
+oS <- summary(olderSlope)$coef[2,1:2]#
+boxplot(rnorm(1e3, yS[1], yS[2]), rnorm(1e3, oS[1], oS[2]))
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Growth <- which(beren3$event == "trait_mass")#
+cor(Growth, beren3$age[Growth])#
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
+plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
+setwd("~/Desktop/Evolution/Tasks/Task_02")#
+beren3 <- read.csv("beren_new.csv", stringsAsFactors=F)#
+Growth <- which(beren3$event == "trait_mass")#
+cor(Growth, beren3$age[Growth])#
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck =-0.01)#
+plot(as.numeric(names(Growth~beren3$age[Growth])), type="b", pch=16, xlab="age in days", ylab="mass in kg", xlim=c(0, 218), ylim=c(4, 10))
