@@ -1,10 +1,14 @@
 setwd('~/Desktop/Evolution/Tasks/Task_05')
 source("http://jonsmitchell.com/code/fxn05.R")
+
 Pop1 <- simPop(Popsize = 50, nGenerations = 100, initial_p = 0.5, h=1, s=0)
+
 plot(1:nrow(Pop1), Pop1[,1], ylim=c(0,1), type="l",xlab="generation", ylab= "allele freq.", lwd=2)
 lines(1:nrow(Pop1), Pop1[,1], lwd=2, col='red' )
 legend("topleft", legend=c ("a", "b"), col=c("black", "red"), lwd=2, bty="n")
-plotFit(nruns=10, n=50, ngens=100, init_p=0.5, h=1, s=0)
+#changing these to study 
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=1.5, s=0.1)
+
 Expectation <- c(10, 10, 10, 10)
 Observed <- c(15, 15, 5, 5)
 Chisq <- sum(((Expectation - Observed)^2)/2)
