@@ -1,12 +1,3 @@
-x
-x[1:10]
-x[is.na(x)]
-y<- x[!is.na(x)]
-y
-y[y>0]
-x[x >0]
--- x[!is.na(x)x>0]
-x[!is.na(x)x>0]
 x[!is.na(x) & x > 0]
 x[c(3, 5,7)]
 x(i.e. x[0])
@@ -281,11 +272,6 @@ for (i in backgrounds) {#
 }
 for (i in backgrounds) {#
 	Data <- Chisqs[which(results[,3]==i)]#
-	addHist(Y=counter, Dat=Data, Color=backgroundCol[counter])#
-	counter<- counter+1#
-}
-for (i in backgrounds) {#
-	Data <- Chisqs[which(results[,3]==i)]#
 	addHist(Y=counter, Dat=Data, Color=backgroundsCol[counter])#
 	counter<- counter+1#
 }
@@ -362,42 +348,6 @@ for (i in backgrounds) {#
 }#
 #
 abline(v=11.7, lty=2, col='black')
-Simulation <- simDraws(10000)#
-#
-addHist(Y=7, Dat=Simulation, Color="lightgray")#
-mtext(side=2, at=7, line=0, "simulated")#
-#
-abline(v=11.70, lty=2, lwd=2)#
-#
-Fit<- c(1,1,1,1,1,1)#
-names(Fit)<- 1:6#
-Simulation2<- simDraws(1e4, w=Fit)#
-addHist(Y=8, Dat=Simulation2, Color=rgb(0,0,0, 0.25))#
-#
-#one selected against#
-Fit<- c(0.1, 1, 1, 1, 1, 1)#
-names(Fit)<- 1:6#
-Simulation3<- simDraws(1e4, w=Fit)#
-addHist(Y=8, Dat=Simulation3, Color=rgb(0,0,0,0.25))#
-#
-#three tooth picks types selected #
-Fit<- c(0.5, 0.6, 0.7, 1, 1, 1)#
-names(Fit)<- 1:6#
-Simulation4<- simDraws(1e4, w=Fit)#
-addHist(Y=8, Dat=Simulation4, Color=rgb(0,0,0,0.25))#
-#
-#Five selected against #
-Fit<- c(0.1, 0.2, 0.3, 0.4, 0.5, 1)#
-names(Fit)<- 1:6#
-Simulation5<- simDraws(1e4, w=Fit)#
-addHist(Y=8, Dat=Simulation5, Color=rgb(0,0,0,0.25))#
-#
-#insane selection#
-Fit<- c(0.1, 0.1, 0.1, 0.1, 0.1, 1)#
-names(Fit)<- 1:6#
-Simulation6<- simDraws(1e4, w=Fit)#
-addHist(Y=8, Dat=Simulation6, Color=rgb(0,0,0,0.25))#
-mtext(side=2, at=8, line=0, "sel.sim.")
 Simulation <- simDraws(10000)#
 #
 addHist(Y=7, Dat=Simulation, Color="lightgray")#
@@ -662,3 +612,29 @@ names(Fit)<- 1:6#
 Simulation6<- simDraws(1e4, w=Fit)#
 addHist(Y=8, Dat=Simulation6, Color=rgb(0,0,0,0.25))#
 mtext(side=2, at=8, line=0, "sel.sim.")
+setwd('~/Desktop/Evolution/Tasks/Task_05')#
+source("http://jonsmitchell.com/code/fxn05.R")#
+#
+Pop1 <- simPop(Popsize = 50, nGenerations = 100, initial_p = 0.5, h=1, s=0)#
+#
+plot(1:nrow(Pop1), Pop1[,1], ylim=c(0,1), type="l",xlab="generation", ylab= "allele freq.", lwd=2)#
+lines(1:nrow(Pop1), Pop1[,1], lwd=2, col='red' )#
+legend("topleft", legend=c ("a", "b"), col=c("black", "red"), lwd=2, bty="n")#
+#changing these to study #
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=1.5, s=0.1)
+Pop1 <- simPop(Popsize = 50, nGenerations = 100, initial_p = 0.5, h=1, s=0)#
+#
+plot(1:nrow(Pop1), Pop1[,1], ylim=c(0,1), type="l",xlab="generation", ylab= "allele freq.", lwd=2)#
+lines(1:nrow(Pop1), Pop1[,1], lwd=2, col='red' )#
+legend("topleft", legend=c ("a", "b"), col=c("black", "red"), lwd=2, bty="n")#
+#changing these to study #
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=1.5, s=0.1)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=1, s=0.5)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=0, s=0.5)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=.5, s=0.5)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=2, s=0.5)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=2, s=0.5)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=2, s=0.1)
+plotFit(nruns=50, n=20, ngens=100, init_p=0.5, h=-1, s=0.1)
+plotFit(nruns=50, n=20, ngens=200, init_p=0.5, h=-1, s=0.1)
+plotFit(nruns=50, n=20, ngens=200, init_p=0.5, h=-2, s=0.1)
