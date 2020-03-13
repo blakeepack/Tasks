@@ -1,0 +1,17 @@
+setwd("~/Desktop/Evolution/Evolution Paper Work")#
+Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)#
+Data <- read.csv("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt")#
+read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt", header=T, row.num=NULL, sep="/t"
+setwd("~/Desktop/Evolution/Evolution Paper Work")
+Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)
+setwd("~/Desktop/Evolution/Evolution Paper Work")
+setwd("~/Desktop/Evolution/Evolution Paper Work")
+setwd("~/Desktop/Evolution/Tasks/Project")
+Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)
+Data <- read.csv("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt")
+read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt", header=T, row.num=NULL, sep="/t"
+Noise Data <- read.csv(~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv)
+Noise Data <- read.csv(~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv)
+Noise Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
+read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
+NoiseData<- read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
