@@ -1,17 +1,89 @@
-setwd("~/Desktop/Evolution/Evolution Paper Work")#
-Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)#
-Data <- read.csv("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt")#
-read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt", header=T, row.num=NULL, sep="/t"
-setwd("~/Desktop/Evolution/Evolution Paper Work")
-Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)
-setwd("~/Desktop/Evolution/Evolution Paper Work")
-setwd("~/Desktop/Evolution/Evolution Paper Work")
 setwd("~/Desktop/Evolution/Tasks/Project")
-Data <- read.csv(http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt)
-Data <- read.csv("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt")
-read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR93_Aug2008.txt", header=T, row.num=NULL, sep="/t"
-Noise Data <- read.csv(~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv)
-Noise Data <- read.csv(~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv)
-Noise Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
-read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
-NoiseData<- read.csv("~/Desktop/Evolution/Tasks/Project/Evolution Sound Data.csv")
+data <- read.csv(~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv)
+data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv")
+data
+colnames(data)
+plot("Average.of.Averages", "Average.Weight..kg")
+install.packages("ggplot2")
+setwd("~/Desktop/Evolution/Tasks/Project")
+data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv")
+colnames(data)
+ggplot()+ geom_line(aes(y=AvgAvg, x=AvgMass), data= Data)
+ggplot( + geom_line(aes(y=AvgAvg, x=AvgMass), data= Data)
+p1 <- ggplot( + geom_line(aes(y=AvgAvg, x=AvgMass), data= Data)
+p1 <- ggplot() + geom_line(aes(y=AvgAvg, x=AvgMass), data= Data)
+p1 <- (ggplot() + geom_line(aes(y=AvgAvg, x=AvgMass), data= Data)
+ggplot(Data$AvgAvg, Data$AvgMass)
+ggplot(Data$AvgAvg, Data$AvgMass)
+plot(Data$AvgAvg, Data$AvgMass)
+setwd("~/Desktop/Evolution/Tasks/Project")
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv")
+plot(Data$AvgAvg, Data$AvgMass)
+plot(Data$AvgMax, Data$AvgMass)
+plot(Data$AvgMass, Data$AvgAvg)
+plot(Data$AvgMass, Data$AvgdB)
+plot(Data$AvgMass, Data$AvgdB)
+plot(Data$AvgMass, Data$AvgAvg)
+plot(Data$AvgMass, Data$AvgdB)
+par(mar=c(4,5,2,1), las=1, tck=-0.01, mgp=c(2.5,0.5,0))
+plot(Data$AvgMass, Data$AvgdB)
+setwd("~/Desktop/Evolution/Tasks/Project")
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv")
+plot(Data$AvgMass, Data$AvgdB)
+par(mar=c(4,5,2,1), las=1, tck=-0.01, mgp=c(2.5,0.5,0))
+plot(Data$AvgMass, Data$AvgdB)
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)
+plot(as.numeric(names(Data$AvgMass)), Data$AvgAvg, type="b", pch=16, xlab=" Mass kg", ylab="Sound dB")
+plot(Data$AvgMass, DataAvgAvg, type="b", pch=16)
+plot(Data$AvgMass, Data$AvgAvg, type="b", pch=16)
+plot(Data$AvgMass, Data$AvgAvg, type="b", pch=16)
+Beluga<-Data[36,2:9]
+Beluga
+Beluga<-Data[AJ,2:9]
+Beluga<-Data[36,2:9]
+Beluga
+Beluga<-Data[2:9,36]
+Beluga
+Beluga<-Data[1:8,36]
+Beluga
+BelugaMass<-Data[1:8,36]
+BelugaAvgAvg <- Data[1:8,34]
+BelugaAvgAvg
+BelugaAvg <- Data[1:8,34]
+Beluga
+BelugaAvg
+BelugaAvg <- Data[1:8,32]
+BelugaAvg
+BelugaMax <- Data[1:8,33]
+BelugaMax
+AvgAvg <- Data[1:90,36]
+AvgMass <- Data[1:90,36]
+AvgAvg<- Data[1:90,]
+AvgMass <- Data[1:90,36]
+AvgAvg<- Data[1:90,35]
+plot(AvgMass,AvgAvg)
+plot(AvgdB,AvgMass)
+plot(Data$AvgdB,Data$AvgMass)
+plot(Data$AvgMass,Data$AvgdB)
+plot(Data$AvgMass,Data$AvgdB, xlab=Mass kg, ylab= Average dB sound of call)
+plot(Data$AvgMass,Data$AvgdB, xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB, xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB, xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB, xlab="Mass kg", ylab= "Average dB sound of call", type="n")
+plot(Data$AvgMass,Data$AvgdB,type=n xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB,type="n" xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call", stringAsFactors=F)
+Data$AvgMass<- as.numeric(gsub(",","",Data$AvgMass))
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv", stringAsFactors=F)
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv")
+Data$AvgMass<- as.numeric(gsub(",","",Data$AvgMass))
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call")
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call")
+plot(AvgMass,AvgAvg)
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv",stringsAsFactors=F)
+Data$AvgMass<- as.numeric(gsub(",","",Data$AvgMass))
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call")
+?plot
+Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv",stringsAsFactors=F)
+plot(Data$AvgMass,Data$AvgdB,type="n", xlab="Mass kg", ylab= "Average dB sound of call")

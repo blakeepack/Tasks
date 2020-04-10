@@ -19,12 +19,13 @@ setwd("~/Desktop/Evolution/Tasks/Project")
 Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv",stringsAsFactors=F)
 
 #Average dB graphing and tests
-plot(Data$AvgMassR,Data$AvgMaxR, xlab="Mass kg", ylab= "Estimated Maximum Intensity Sound", type="p",pch=16)
-abline(lm(Data$EstMax ~ Data$AvgMassR))
+plot(Data$AvgMass,Data$AvgdB, xlab="Average Mass(kg)", ylab= "Average dB of Call(dB)", type="p",pch=16)
+abline(lm(Data$AvgdB~ Data$AvgMass))
 cor.test(Data$)
 plot(Data$AvgMassR,Data$EstMax)
 abline(lm(Data$EstMax~Data$AvgMassR))
-cor.test(Data$AvgEstMax,Data$AvgMassR)
+cor.test(Data$EstMax,Data$AvgMassR)
+lm(Data$AvgMass~Data$AvgdB)
 
 
 #Here are my notes and questions I need help with. Im wanting to make a scatter plot of all the noises connected the weight in order from lowest weight to highest weigh, I know that is not what I have turned into you but I cant get the x-axis to go in order for some reason and I plan to make several graphs so this is a problem im really needing help on. My idea for doing this is converting each group into its own set of objects and somehow adding that to a large already amde graph. that way i can make each group its own color and look at them speerately
