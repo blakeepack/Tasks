@@ -18,15 +18,70 @@
 setwd("~/Desktop/Evolution/Tasks/Project")
 Data <- read.csv("~/Desktop/Evolution/Tasks/Project/Data/Whale Sound Data.csv",stringsAsFactors=F)
 
-#Average dB graphing and tests
-plot(Data$AvgMass,Data$AvgdB, xlab="Average Mass(kg)", ylab= "Average dB of Call(dB)", type="p",pch=16)
+
+
+PhylogenyData<-read.csv("~/Desktop/Evolution/Tasks/Project/Data/tree-pruner-fed449b6-d5ed-4b9a-9559-b53609a74b29/config.yaml")
+library(phytools)
+phyl(PhylogenyData)
+phyl.resid(PhylogenyData)
+
+#Average dB graphing and tests 
+#Parameters for four in one
+par(mfrow=c(2,2), cex.axis=2,cex.lab=1)
+#Average Mass and Average dB of call
+plot(Data$AvgMass,Data$AvgdB, xlab="Average Mass(kg)", ylab= "Average dB of Call(dB)", type="p",pch=16,cex.axis=1.2,cex.lab=1.1,main="Figure 2A")
 abline(lm(Data$AvgdB~ Data$AvgMass))
+
+
+
+
+
+
+#Avg of Avg of dB of call 
+plot(Data$AvgMassR,Data$AvgAvgR, xlab="Average Mass(kg)", ylab= "Average of Average dB of Call(dB)", type="p",pch=16,cex.axis=1.2, cex.lab=1.1, main="Figure 2B ")
+abline(lm(Data$AvgAvgR~ Data$AvgMassR))
+
+
+
+#Average of maximum sounds analyzed 
+plot(Data$AvgMassR,Data$AvgMaxR, xlab="Average Mass(kg)", ylab= "Average of Maximums of Calls Analyzed(dB)", type="p",pch=16,cex.axis=1.2, cex.lab=1.1, main="Figure 2C")
+abline(lm(Data$AvgMaxR~ Data$AvgMassR))
+
+
+
+
+#Estimated Maximums
+plot(Data$AvgMassRR,Data$EstMaxR, xlab="Average Mass(kg)", ylab= "Known Maximums per Species(dB)", type="p",pch=16,cex.axis=1.2, cex.lab=1.1, main="Figure 2D")
+abline(lm(Data$EstMaxR~ Data$AvgMassRR))
+
+
+?plot
+
+
+
+
+
+
+
+
+#Testing Area Just repalce the variables
 cor.test(Data$)
 plot(Data$AvgMassR,Data$EstMax)
 abline(lm(Data$EstMax~Data$AvgMassR))
-cor.test(Data$EstMax,Data$AvgMassR)
+cor.test(Data$EstMaxR,Data$AvgMassRR)
 lm(Data$AvgMass~Data$AvgdB)
 
+
+
+
+library(ape)
+library(nlme)
+library(geiger)
+tree<- read.nexus("~/Desktop/Evolution/Tasks/Project/Data/tree-pruner-fed449b6-d5ed-4b9a-9559-b53609a74b29/output.nex")
+plot(tree)
+phyl.resid(tree)
+obj<- name.check(tree,data)
+res.bm<-phyl.resid(tree,x=AvgMassR,Y=AvgAvg)
 
 #Here are my notes and questions I need help with. Im wanting to make a scatter plot of all the noises connected the weight in order from lowest weight to highest weigh, I know that is not what I have turned into you but I cant get the x-axis to go in order for some reason and I plan to make several graphs so this is a problem im really needing help on. My idea for doing this is converting each group into its own set of objects and somehow adding that to a large already amde graph. that way i can make each group its own color and look at them speerately
 

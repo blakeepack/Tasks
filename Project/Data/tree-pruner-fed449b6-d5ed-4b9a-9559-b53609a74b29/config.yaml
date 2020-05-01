@@ -1,0 +1,129 @@
+job_id: tree-pruner-fed449b6-d5ed-4b9a-9559-b53609a74b29
+email: blakeepack@yahoo.com
+tree_base: mammaltree
+tree_set: MamPhy_BDvr_Completed_5911sp_topoCons_NDexp
+sample_size: 100
+names: [Delphinapterus_leucas, Balaena_mysticetus, Megaptera_novaeangliae, Eubalaena_glacialis,
+  Globicephala_mela, Eubalaena_australis, Balaenoptera_musculus, Monodon_monoceros,
+  Peponocephala_electra, Eschrichtius_robustus, Balaenoptera_acutorostrata, Balaenoptera_physalus,
+  Orcinus_orca, Grampus_griseus]
+sample_trees: [MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1929.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9708.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6943.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0932.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0746.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9492.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0374.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4813.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9606.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6897.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0472.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8191.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6774.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1065.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9885.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3844.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4209.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8000.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2115.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5422.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5650.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7048.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5635.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8946.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7233.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9158.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6147.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4022.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0343.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4519.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8454.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3906.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7014.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9148.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0092.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2480.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6850.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4872.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5445.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3687.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8452.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7051.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6782.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9326.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8411.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1772.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3262.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5510.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8415.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6743.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1015.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4900.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5766.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1645.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5196.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5868.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2429.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2895.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5339.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0277.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6292.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4118.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8735.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4864.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2122.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1484.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4426.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7467.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7514.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1718.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9782.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1959.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8801.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7321.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7316.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5975.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3145.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7026.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2157.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3031.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4687.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9255.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0556.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7307.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0236.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7840.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4736.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7171.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3373.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7753.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0010.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8472.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0256.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8788.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6851.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3236.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7446.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2830.tre,
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1794.tre, MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1600.tre]
+status: COMPLETED
+created_at: "2020-04-28T06:14:30Z"
+completed_at: "2020-04-28T06:15:24Z"
+bad_names: {MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0010.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0092.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0236.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0256.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0277.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0343.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0374.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0472.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0556.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0746.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_0932.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1015.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1065.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1484.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1600.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1645.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1718.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1772.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1794.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1929.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_1959.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2115.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2122.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2157.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2429.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2480.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2830.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_2895.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3031.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3145.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3236.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3262.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3373.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3687.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3844.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_3906.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4022.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4118.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4209.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4426.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4519.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4687.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4736.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4813.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4864.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4872.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_4900.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5196.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5339.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5422.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5445.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5510.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5635.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5650.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5766.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5868.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_5975.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6147.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6292.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6743.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6774.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6782.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6850.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6851.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6897.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_6943.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7014.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7026.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7048.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7051.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7171.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7233.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7307.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7316.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7321.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7446.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7467.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7514.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7753.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_7840.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8000.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8191.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8411.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8415.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8452.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8454.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8472.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8735.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8788.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8801.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_8946.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9148.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9158.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9255.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9326.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9492.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9606.tre: [Globicephala_mela],
+  MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9708.tre: [Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9782.tre: [
+    Globicephala_mela], MamPhy_BDvr_Completed_5911sp_topoCons_NDexp_9885.tre: [Globicephala_mela]}

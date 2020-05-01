@@ -1,0 +1,397 @@
+submit()
+evaluate(c(1.4, 3.6, 7.9, 8.8))
+evaluate(std,c(1.4, 3.6, 7.9, 8.8))
+evaluate(sd,c(1.4, 3.6, 7.9, 8.8))
+evaluate(function(x){x+1}, 6)
+evaluate(anonymous(c(8, 4, 0)))
+evaluate(c(8, 4, 0))
+evaluate(function(x){x[length(x)]}, c(8, 4, 0))
+evaluate(function(x){x[1]}, c(8, 4, 0))
+evaluate(function(x){x[-1]}, c(8, 4, 0))
+?paste
+paste("Programming", "is","fun!")
+submit()
+telegram()
+submit()
+mad_libs(place = "Fayetteville", adjustive = "wild", noun = "person")
+submit()
+"I"%p% "love"%p%"R"
+"I" %p% "love" %p% "R"
+"I" %p% "love" %p% "R!"
+data(cars)
+?cars
+head(cars)
+plot(cars)
+?plot()
+?plot
+plot(x, y)
+plot( x= cars$speed, y= cars$dist)
+plot( x= cars$dist, y= cars$speed)
+plot( x= cars$speed, y = cars$dist, xlab = "Speed")
+plot( x= cars$speed, y = cars$dist, ylab = "Stopping Distance")
+plot( x= cars$speed, y = cars$dist, xlab = "Speed", ylab= "Stopping Distance ")
+plot( x= cars$speed, y = cars$dist, xlab = "Speed", ylab= "Stopping Distance")
+plot(cars, main="My Plot")
+plot(cars, sub= "My Plot Subtitle")
+plot(cars, col=2)
+plot(cars, xlim= c(10, 15))
+plot(cars, pch = 2)
+data(mtcars)
+?boxplot
+boxplot(formula = mpg~ cyl, data =mtcars)
+hist(mtcars$mpg)
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+Data <- read.csv("http://jonsmitchell.com/data/beren.csv" , stringsAsFactors=F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:5, 1:3]#
+Feeds <- which(Data[,9] == "bottle")#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, "event"] == "bottle")#
+Feeds <- which(Data$event == "bottle")#
+dayID <- apply(Data, 1, function(x)paste(x[1:3], collapse="-"))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event =="birth")]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age),]#
+write.csv(beren3, "beren_new.csv", quote=F, row.names=FALSE)#
+#
+Feeds <- which(beren3$event == "bottle")#
+#
+avgMilk <- mean(beren3$value[Feeds])#
+# fluid oz#
+#because it contains the numerical measurement#
+#It calls back to the previously set object that we set for the event bottle#
+avgFeed <- tapply(beren3$value [Feeds], beren3$age[Feeds], mean, na.rm=T)#
+varFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], var, na.rm=T)#
+totalFeed <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum, na.rm=T)#
+numFeeds <- tapply(beren3$value[Feeds], beren3$age[Feeds], length)#
+cor(beren3$value[Feeds], beren3$age[Feeds])#
+cor.test(beren3$value[Feeds], beren3$age[Feeds])#
+berenCor <- cor.test(beren3$value[Feeds], beren3$age[Feeds])#
+summary(berenCor)#
+berenANOVA <- aov(beren3$value[Feeds] ~ beren3$caregiver[Feeds])#
+boxplot( beren3$value[Feeds] ~ beren3$caregiver[Feeds], xlab= "who gave the bottle", ylab= "amount of milk consumed (oz)")#
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
+abline(h= avgFeed, lty=2, col='red')#
+#
+pdf("r02b-totalMilkByDay.pdf", height=4, width=4)#
+#
+par(las=1, mar=c(5, 5, 1, 1), mgp=c(2, 0.5, 0), tck=-0.01)#
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")#
+abline(h=mean(totalFeed), lty=2, col='red')
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+dev.off()
+source("http://jonsmitchell.com/code/plotFxn02b.R")
+Data <- read.csv("https://www.geosociety.org/documents/gsa/timescale/timescl.pdf")
+read.csv("https://www.geosociety.org/documents/gsa/timescale/timescl.pdf")
+simpop(50, 500, h=2, s=0.75)
+library(phytools)
+library(maps)
+library(ape)
+library(phytools)
+text.string <- "(((((((cow, pig), whale),(bat,(lemur, human))),(robin, iguana)), coelacanth), (gold_fish, trout)),shark);"
+vert.tree <- read.tree(text=text.string)
+plot(vert.tree, edge.width)
+plot(vert.tree, edge.width=2)
+nodelabels(frame="circle", bg='white', cex=1)
+vert.tree
+str(vert.tree)
+tree <- read.tree(text="(((A,B)(C,D),E);)")
+tree <- read.tree(text="(((A,B),(C,D),E);)")
+tree <- read.tree(text="(((A,B),(C,D)),E);")
+plotTree(tree, offset=1)
+tiplabels(frame="circle", bg='lightblue',cex=1)
+nodelabels(frame="circle",bg='white', cex=1)
+tree$tip.label
+tree$edge
+par(las=1)
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50),xlim=c(0,6))
+par(las=1)
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50),xlim=c(0,6))
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))
+par(las=1)
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50),xlim=c(0,6))
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))
+Lengths <- AnolisTree$edge.length
+names(Length)<- ANolisTree$tip.label
+names(Length)<- AnolisTree$tip.label
+Lengths <- AnolisTree$edge.length
+names(Length)<- AnolisTree$tip.label
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))
+Lengths <- AnolisTree$edge.length
+names(Length)<- AnolisTree$tip.label
+names(Lengths)<- AnolisTree$tip.label
+names(Lengths)[which(Lengths == min(Lengths))]
+plot(AnolisTree, cex=0.25)
+Labs <-sapply(AnolisTree$edge.length, round, digits=2)
+edgelabels(text=Labels, cex=0.25)
+?plot.phylo
+edgelabels(text=Labs, cex=0.25)
+?plot.phylo
+ltt(AnolisTree)
+abline(0,1,lwd=2,col='red',lty=2)
+plot(tree, offset=1)
+plotTree(tree, offset=1)
+edgelabels(text=NULL, cex=0.25)
+?plot.phylo
+plotTree(tree, type=fan)
+plotTree(tree, type="fan")
+plot(AnolisTree, tip.color='red')
+plotTree(AnolisTree, tip.color='red')
+plotTree(Tree, tip.color='red')
+plotTree(tree, tip.color='red')
+plotTree(tree, type="fan")
+plotTree(tree, tip.color='red')
+plot(AnolisTree,cex=0.25,tip.color='red')
+plot(Anolistree, type="fan")
+plot(AnolisTree, type="fan")
+plot(AnolisTree, offset=1)
+plotTree(AnolisTree, offset=1)
+edgelabels(text=NULL, cex=0.25)
+ltt(AnolisTree)#
+abline(0,1,lwd=2,col='red',lty=2)
+fit.bd(AnolisTree)
+fit.bd(AnolisLizards)
+fit.bd(AnolisLizards, rho=0.2)
+fit.bd(AnolisTree, rho=0.2)
+fit.bd(AnolisLizard, rho=0.2)
+fit.bd(Anolislizard, rho=0.2)
+fit.bd(AnolisTree, rho=0.2)
+plotTree(AnolisTree, offset=1)
+show.tip.label=FALSE
+plotTree(AnolisTree, offset=1)
+show.tip.label=FALSE
+plot(AnolisTree, cex=0.25)
+show.tip.label=FALSE
+plotTree(AnolisTree, offset=1, show.tip.label=FALSE)
+text.string <- "(((((((cow, pig), whale),(bat,(lemur, human))),(robin, iguana)), coelacanth), (gold_fish, trout)),shark);"#
+vert.tree <- read.tree(text=text.string)#
+plot(vert.tree, edge.width=2)#
+#
+nodelabels(frame="circle", bg='white', cex=1)#
+#
+#goldfish is more closely related I think because it connects to 13 in less nodes than humans do#
+#
+vert.tree#
+#
+str(vert.tree)#
+#
+tree <- read.tree(text="(((A,B),(C,D)),E);")#
+plotTree(tree, offset=1)#
+tiplabels(frame="circle", bg='lightblue',cex=1)#
+nodelabels(frame="circle",bg='white', cex=1)#
+#
+tree$tip.label#
+#
+tree$edge#
+#
+AnolisTree <- force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))#
+#
+par(las=1)#
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50),xlim=c(0,6))
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))
+Lengths <- AnolisTree$edge.length
+names(Lengths)<- AnolisTree$tip.label
+names(Lengths)[which(Lengths == min(Lengths))]
+plot(AnolisTree, cex=0.25)
+Labs <-sapply(AnolisTree$edge.length, round, digits=2)
+edgelabels(text=Labs, cex=0.25)
+show.tip.label=FALSE
+plotTree(AnolisTree, offset=1, show.tip.label=FALSE)
+show.tip.label=FALSE
+plot(AnolisTree, cex=0.25)
+plot(AnolisTree,cex=0.25, offset=1, show.tip.label=FALSE)
+plot(AnolisTree, type="fan")
+plot(AnolisTree,cex=0.25,tip.color='red')
+Lengths
+edgelabels(tree$edge.length)
+install.package(treebase)
+install.package("treebase")
+install.package("treebase", dep=T)
+library("treebase")
+install.package("treebase")
+shortest <- "occutus"
+shortest <- "occultus"
+AnolisTree2 <- drop.tip(ANolisTree, pr.species)
+AnolisTree2 <- drop.tip(AnolisTree, pr.species)
+AnolisTree2 <- drop.tip(AnolisTree, shortest)
+plot(AnolisTree2, cex=0.25)
+AnolisTree2 <- drop.tip(AnolisTree, shortest)
+shortest <- "occultus"
+plot(AnolisTree2, cex=0.25)
+shortest <- "Anolis occultus"
+AnolisTree2 <- drop.tip(AnolisTree, shortest)
+plot(AnolisTree2, cex=0.25)
+Lengths
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))#
+Lengths <- AnolisTree$edge.length[tipEdges]#
+names(Lengths)<- AnolisTree$tip.label
+Lengths
+names(Lengths)[which(Lengths == min(Lengths))]
+sort(Lengths)
+plot(AnolisTree)
+plot(AnolisTree, cex=0.5)
+tipEdges
+head(AnolisTree$edge)
+head(AnolisTree$edge.length)
+plot(AnolisTree)
+edgelabels()
+AnolisTree$edge.length[26]
+x <- rtree(10)
+plot(x)
+which(x$edge[,2] <= 10)
+edgelabels()
+tiplabels()
+nodelabels()
+plot(AnolisTree)
+tiplabels()
+AnolisTree$tip.label[1]
+nodelabels()''
+nodelabels()
+x <- setNames(AnolisTree$edge.length[sapply(1:n, function(x,y) which(x==y), y = AnolisTree$edge[,2])], AnolisTree$tip.label)
+n <- Ntip(AnolisTree)
+x <- setNames(AnolisTree$edge.length[sapply(1:n, function(x,y) which(x==y), y = AnolisTree$edge[,2])], AnolisTree$tip.label)
+x
+tipEdges <- which(AnolisTree$edge[,2]<=Ntip(AnolisTree))
+tipEdges
+AnolisTree$edge[tipEdges,]
+Lengths <- AnolisTree$edge.length[AnolisTree$edge[tipEdges,2]]
+Lengths
+names(Lengths) <- AnolisTree$tip.label
+Lengths
+plot(Lengths, x)
+Lengths <- AnolisTree$edge.length[tipEdges]
+names(Lengths) <- AnolisTree$tip.label[AnolisTree$edge[tipEdges,2]]
+Lengths
+sort(Lengths)
+tree <- rtree(5)#
+nodelabels()#
+tiplabels()#
+tree$edge#
+tree$edge.length
+tree <- rtree(5)#
+plot(tree)#
+nodelabels()#
+tiplabels()#
+tree$edge#
+tree$edge.length
+shortest <- "noblei"
+AnolisTree2 <- drop.tip(AnolisTree, shortest)
+plot(AnolisTree2, cex=0.25)
+fit.bd(AnolisTree, rho=0.2)
+ltt(AnolisTree)#
+abline(0,1,lwd=2,col='red',lty=2)
+plot(AnolisTree,cex=0.25,tip.color='red')
+AnolisTree2 <- drop.tip(AnolisTree, "noblei")
+setwd("~/Desktop/Evolution/Tasks/Outside of Class bonus")
+Week1<-95
+week1<-95
+week1<-95week1
+week1
+week1<-95#
+week2<-95#
+week3<-95#
+week4<-100#
+week5<-100#
+week6<-105#
+week7<-105#
+week8<-110#
+week9<-110#
+week10<-115#
+week11<-125#
+week12<-125#
+week13<-125#
+week14<-135#
+week15<-135#
+week16<-135#
+week17<-145#
+week18<-145#
+week19<-145#
+week20<-145
+week1w<-95#
+week2w<-95#
+week3w<-95#
+week4w<-100#
+week5w<-100#
+week6w<-105#
+week7w<-105#
+week8w<-110#
+week9w<-110#
+week10w<-115#
+week11w<-125#
+week12w<-125#
+week13w<-125#
+week14w<-135#
+week15w<-135#
+week16w<-135#
+week17w<-145#
+week18w<-145#
+week19w<-145#
+week20w<-145
+week1<-1#
+week2<-2#
+week3<-3#
+week4<-4#
+week5<-5#
+week6<-6#
+week7<-7#
+week8<-8#
+week9<-9#
+week10<-10#
+week11<-11#
+week12<-12#
+week13<-13#
+week14<-14#
+week15<-15#
+week16<-16#
+week17<-17#
+week18<-18#
+week19<-19#
+week20<-20
+plot(week1,week1w)
+plot((week1,week2,week3),(week1w,week2w,week3w))
+plot((week20,week20w)
+plot(week20,week20w)
+point?
+?point
+point?
+point(week1,week1w)
+addpoint(week1,week1w)
+adpoint(week1,week1w)
+point
+point()
+points()
+points(week1,week1w)
+plot(week20,week20w)
+points(week1,week1w)
+plot(x = 1,                 #
+     xlab = "X Label", #
+     ylab = "Y Label",#
+     xlim = c(0, 100), #
+     ylim = c(0, 100),#
+     main = "Blank Plotting Canvas",#
+     type = "n")
+points(week1,week1w)
+points(1,95)
+plot(week20,week20w)
+points(1,95)
+Data<-read.csv(~/Desktop/Evolution/Tasks/Outside of Class bonus/Weight Data/Bench Weigh csv.csv)
+Data<-read.csv("~/Desktop/Evolution/Tasks/Outside of Class bonus/Weight Data/Bench Weigh csv.csv")
+plot(Data$Week, Data$Weight)
+abline(lm(Data$Weight~Data$Week))
+cor.test(Data$Weight~Data$Week)
+cor.test(Data$Weight,Data$Week)
+lm(Data$Weight~Data$Week)
+slope(Data$Weight~Data$Week)
+slope(Data$Weight,Data$Week)
+Slope(Data$Weight,Data$Week)
